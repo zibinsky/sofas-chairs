@@ -1,0 +1,233 @@
+@media (max-width: 992px) {
+   .header-content__descr {
+      padding: 50px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+
+   .design-chairs {
+      padding: 100px 50px 50px;
+   }
+
+   .design-chairs__descr_container {
+      max-width: 100%;
+   }
+
+   .descr_info_article {
+      max-width: 90% !important;
+   }
+
+   .design-slider {
+      padding: 50px;
+   }
+
+   .swiper-slide {
+      flex-direction: column !important;
+
+      .swiper-slide__info {
+         min-width: 100%;
+         padding-top: 80px;
+         display: flex !important;
+         flex-direction: row !important;
+         align-items: center;
+
+         &_title {
+            line-height: 1 !important;
+
+            &::after {
+               left: 0 !important;
+               bottom: -2vh !important;
+               height: 5px !important;
+            }
+         }
+
+         &_article {
+            display: flex !important;
+            flex-direction: row !important;
+            width: 100%;
+            // column-count: 4;
+         }
+      }
+   }
+
+   .design-trends {
+
+      .container {
+         padding: 50px 0 100px 0;
+         margin: 0 auto;
+
+         .design-trends__gallery {
+            width: 100% !important;
+            height: auto !important;
+            margin: 0 auto !important;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .gallery_item_1,
+            .gallery_item_2,
+            .gallery_item_3,
+            .gallery_item_4 {
+               width: 100% !important;
+               height: auto !important;
+               margin-top: 20px;
+            }
+         }
+
+         .design-trends_button {
+            bottom: 30px;
+         }
+      }
+   }
+}
+
+// ============================== //
+// ============================== //
+
+
+@media (max-width: 768px) {
+   .header-top__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .swiper-slide__info {
+      margin-top: 50px;
+      padding-top: 0 !important;
+   }
+
+   .footer-links {
+      width: 100% !important;
+      margin-bottom: 100px;
+   }
+
+   .footer-address {
+      flex-direction: row !important;
+   }
+}
+
+
+// ============================== //
+// ============================== //
+
+
+@media (max-width: 425px) {
+
+   // HEADER ============================ //
+
+   .header-top__searchPanel {
+      font-size: 0.8rem !important;
+   }
+
+   .search-title,
+   .account-title,
+   .bag-title {
+      font-size: 0.7rem !important;
+   }
+
+
+   // SECTION CHAIRS ==================== //
+
+
+   .design-chairs__descr_info {
+      padding: 50px 0 0 0;
+
+      &_left,
+      &_right {
+         width: 100%;
+      }
+
+      h2 {
+         padding-bottom: 10px;
+      }
+   }
+
+
+   // SECTION SLIDER ==================== //
+
+
+   .swiper-slide__image {
+      width: 100% !important;
+
+      img {
+         max-width: 100% !important;
+         margin: 0 1vw !important;
+      }
+   }
+
+   .swiper-slide__info {
+      margin-top: 10px;
+      flex-direction: row !important;
+      border-left: none !important;
+      display: none !important;
+
+      .swiper-slide__info_title {
+         font-size: 1.1rem !important;
+         display: none !important;
+
+         &::after {
+            display: none;
+         }
+      }
+
+      .swiper-slide__info_article {
+         font-size: 0.8rem !important;
+         line-height: 1.1 !important;
+         display: none !important;
+      }
+   }
+
+   // SECTION TRENDS =================== // 
+
+
+   .design-trends {
+      .container {
+         padding: 50px 0 100px 0;
+      }
+   }
+
+   .design-trends__title {
+      font-size: 1.3rem !important;
+   }
+
+   .design-trends__descr {
+      font-size: 0.8rem !important;
+   }
+
+
+   // FOOTER ============================ //
+
+   .footer {
+      padding: 50px 0;
+   }
+
+   .footer-links__item {
+      padding: 0 5px;
+   }
+
+   .item_sidebar_title {
+      font-size: 1rem !important;
+
+      &::after {
+         height: 0.1vh !important;
+      }
+   }
+
+   .item_info_link {
+      a {
+         font-size: 0.7rem !important;
+      }
+   }
+
+   .footer-address {
+      justify-content: center;
+      text-align: center !important;
+   }
+
+}

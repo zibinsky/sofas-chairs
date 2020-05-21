@@ -1,0 +1,112 @@
+// COLORS ================================
+// =======================================
+
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$oranged: #ff4500;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$whitesmoke: #f5f5f5;
+$light: #f8f9fa;
+$gray: #6c757d;
+$dark: #343a40;
+$black: #272829;
+
+
+// BREAKPOINTS ===========================
+// ======================================= 
+
+
+$breakpoint-xs: 0;
+$breakpoint-iphone5: 320px;
+$breakpoint-xxsm: 375px;
+$breakpoint-xsm: 425px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xlg: 1024px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1440px;
+
+
+// FONT-FAMILY ===========================
+// =======================================  
+
+
+$roboto: 'Roboto',
+sans-serif;
+$montserrat: 'Montserrat',
+sans-serif;
+$playfair: 'Playfair Display',
+serif;
+
+
+// FONT-SIZE =============================
+// ======================================= 
+
+$font8: 0.5rem;
+$font9: 0.565rem;
+$font10: 0.63rem;
+$font12: 0.75rem;
+$font14: 0.87rem;
+$font16: 1rem;
+$font18: 1.12rem;
+$font20: 1.25rem;
+$font32: 2rem;
+$font48: 3rem;
+$font52: 3.25rem;
+$font82: 5.13rem;
+$font112: 7rem;
+$font132: 8.3rem;
+
+
+// ADAPTIVE FONTS ========================
+// ======================================= 
+
+
+$maxWidth: 1920;
+
+@mixin adaptive-font($pcSize, $mobSize) {
+   $addSize: $pcSize - $mobSize;
+   $addMobSize: $pcSize + $mobSize * 0.7;
+
+   @media (max-width: 767px) {
+      font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+   }
+
+   @media (min-width: 767px) {
+      font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+   }
+}
+
+// h1 {
+//    @include adaptive-font(40, 24);
+// }
+
+// h2 {
+//    @include adaptive-font(30, 18);
+// }
+
+// p {
+//    @include adaptive-font(18, 14);
+// }
+
+
+// ======================================= 
+// ======================================= 
+
+@mixin buttonCover {
+   padding: 5px 20px;
+   display: inline-block;
+   background-color: $whitesmoke;
+   border: 2px solid #ccc;
+   box-shadow: 7px 7px 0 $yellow;
+   cursor: pointer;
+}
